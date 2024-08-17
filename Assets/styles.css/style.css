@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content:center;
     align-items: center;
-    padding-right: 2vw;
+    padding-right: 4vw;
     box-shadow: #1c1c1c 2px 2px 2px;
 }
 .headerContainer{
@@ -133,6 +133,7 @@ header{
     cursor: pointer;
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 .navMobile{
@@ -182,9 +183,10 @@ header{
 }
 .mainSlider{
     display: flex;
-    width: 300vw;
+    width: auto;
     transition: all ease 1s;    
     height: auto !important;
+    max-width: 100vw !important;
 }
 
 .homeSection {
@@ -196,6 +198,29 @@ header{
     align-items: center; /* Centraliza verticalmente */
     width: 100vw !important;
     height: calc(100vh - 100px);
+}
+.missionSection{
+    height: auto !important;
+    margin-top: 100px;
+}
+.missionSectionContent{
+    text-align: center;
+    width: 80vw;
+    color: #000;
+}
+.visionSection{
+    height: auto !important;
+}
+.visionSectionContent{
+    text-align: center;
+    width: 80vw;
+    color: #000;
+    margin-top: 100px;
+}
+.listValues{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeSectionContent {
@@ -268,16 +293,7 @@ header{
     position: relative;
 }
 
-.visionSectionContent{
-    text-align: center;
-    position: absolute;
-    width: 80vw;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 /*História Page*/
@@ -718,7 +734,6 @@ display: none;
     }
     .sectionBio{
         width: 90vw;
-        height: 130vh !important;
     }
 }
 @media (max-width: 320px) {
@@ -732,7 +747,6 @@ display: none;
     }   
     .sectionBio{
         width: 90vw;
-        height: 130vh !important;
     }
 }
 
