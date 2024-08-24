@@ -190,22 +190,22 @@ header{
 }
 
 .homeSection {
-    background-image: url('../imgs/Background.jpg');
+    color: #000;
     background-size: cover;
     background-position: bottom;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     width: 100vw !important;
-    height: calc(100vh - 100px);
+    height: auto;
 }
 .missionSection{
     height: auto !important;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 .missionSectionContent{
     text-align: center;
-    width: 80vw;
+    width: 60vw;
     color: #000;
 }
 .visionSection{
@@ -213,21 +213,22 @@ header{
 }
 .visionSectionContent{
     text-align: center;
-    width: 80vw;
+    width: 60vw;
     color: #000;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 .listValues{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    margin-top: 25px;
 }
 
 .homeSectionContent {
     text-align: center;
-    width: 80vw;
-    color: #fff;
-    position: absolute;
+    width: 60vw;
+    color: #000;
 }
 .underline {
     width: 40%;
@@ -347,6 +348,10 @@ header{
     justify-content: center;
 }
 /*RAYANA FONTE*/
+.biographyPage{
+    width: 100vw;
+    display: flex;
+}
 .containerBio{
     width: 80vw !important;
     display: flex;
@@ -357,6 +362,9 @@ header{
 .sectionBio{
     overflow: hidden;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 /*Imagem Bio*/
@@ -733,7 +741,8 @@ display: none;
         max-width: 80vw !important;
     }
     .sectionBio{
-        width: 90vw;
+        width: 100vw;
+        height: auto;
     }
 }
 @media (max-width: 320px) {
@@ -746,7 +755,8 @@ display: none;
         font-size: 10px;
     }   
     .sectionBio{
-        width: 90vw;
+        width: 100vw;
+        height: auto;
     }
 }
 

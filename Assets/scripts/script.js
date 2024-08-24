@@ -38,7 +38,7 @@ function changeToRegisterPage(){
     loginPage.style.display = 'none';
     registerPage.style.display = 'grid';    
     historiaButton.classList.remove('active');
-    biographyButton.classList.remove('active');
+    //biographyButton.classList.remove('active');
     homeButton.classList.remove('active') ;
 
     homeButton.addEventListener('click',()=>{       
@@ -63,7 +63,7 @@ function changeToRegisterPage(){
 
 function reloadHomePage(){
     homePage.style.display = 'block';
-    biographyPage.style.display ='none';
+    // biographyPage.style.display ='none';
     historiaPage.style.display ='none';
     festivalPage.style.display = 'none';
     document.querySelector('.global').style.display = 'block';
@@ -74,14 +74,14 @@ function reloadHomePage(){
     homeButton.classList.add('active');    
     historiaButton.classList.remove('active');
     festivalButton.classList.remove('active');  
-    biographyButton.classList.remove('active');   
+    // biographyButton.classList.remove('active');   
     document.querySelector('.mainSlider').style.transform = "translateX(0vw)";
 
     closeMenu()
 }
 function reloadHistoriaPage(){
     homePage.style.display = 'block';
-    biographyPage.style.display ='none';
+     //biographyPage.style.display ='none';
     historiaPage.style.display ='block';
     document.querySelector('.global').style.display = 'block';
     
@@ -90,12 +90,12 @@ function reloadHistoriaPage(){
     document.querySelector('.mainSlider').style.display = 'flex';
     homeButton.classList.remove('active');    
     historiaButton.classList.add('active');
-    biographyButton.classList.remove('active');   
+    // biographyButton.classList.remove('active');   
     festivalButton.classList.remove('active');  
     document.querySelector('.mainSlider').style.transform = "translateX(-100vw)";
     closeMenu()
 }
-function reloadbiographyPage(){    
+    /*function reloadbiographyPage(){    
     homePage.style.display = 'block';
     biographyPage.style.display ='block';
     historiaPage.style.display ='block';
@@ -110,10 +110,10 @@ function reloadbiographyPage(){
     festivalButton.classList.remove('active');  
     document.querySelector('.mainSlider').style.transform = "translateX(-200vw)";
     closeMenu()
-}
+}*/
 function reloadFestivalPage(){
     historiaPage.style.display ='block';
-    biographyPage.style.display ='block';
+     //biographyPage.style.display ='block';
     festivalPage.style.display = 'block';
     document.querySelector('.global').style.display = 'block';
    
@@ -122,14 +122,14 @@ function reloadFestivalPage(){
     document.querySelector('.mainSlider').style.display = 'flex';
     homeButton.classList.remove('active');    
     historiaButton.classList.remove('active');
-    biographyButton.classList.remove('active');
+     //biographyButton.classList.remove('active');
     festivalButton.classList.add('active');
     globalContainer.classList.add('globalActive');
     
     document.querySelector('.mainSlider').style.transform = "translateX(-300vw)";
     closeMenu()
     historiaPage.style.display ='none';
-    biographyPage.style.display ='none';
+     //biographyPage.style.display ='none';
     homePage.style.display = 'none';
     document.querySelector('.mainSlider').style.transform = "translateX(0vw)";
 }
