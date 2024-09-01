@@ -404,7 +404,25 @@ header{
     align-items: center;
     justify-content: center !important;   
  }
-
+.socialMedia{
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navIcon{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.mediaIcon{
+    width: 60px;
+    height: 60px;
+    
+    background-image: url('../imgs/instagram.png');
+    background-position: center;
+    background-size: cover;
+}
 /*Login Page*/
 
 .loginSection {
